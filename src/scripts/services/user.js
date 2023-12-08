@@ -6,4 +6,5 @@ async function getUser(userName){
     return await response.json()
 }
 
+
 export {getUser}

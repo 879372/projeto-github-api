@@ -6,6 +6,8 @@ const screen = {
                                         <div class="data"> 
                                         <h1>${user.name ?? 'Não possui nome cadastrado'}</h1>
                                         <p>${user.bio ?? 'Não possui bio cadastrada'}</p>
+                                        <p>Seguidores:${user.seguidores ?? 'Não possui seguidores'}</p>
+                                        <p>Seguindo:${user.seguindo ?? 'Não possui seguidores'}</p>
                                         </div>
                                       </div>`
 
@@ -19,6 +21,8 @@ const screen = {
                                           <div>`
                                             
         }
+
+
     },
     renderNotfound(){
         this.userProfile.innerHTML = `<h3>Usuário não encontrado</h3>`
